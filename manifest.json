@@ -1,0 +1,23 @@
+{
+	"name":"No Xvideos",
+	"version":"0.1",
+	"manifest_version":2,
+
+	"description":"Stop watching Xvideos.You're redirected to the new page when you watch Xvideos.",
+
+	"icons":{
+		"48":"icon48.png"
+	},
+
+	"permissions":[
+		"tabs","http://*/*"
+	],
+
+	"content_scripts":[
+		{
+			"matches":["http://*.xvideos.com/*"],
+			"js":["script.js"]
+		}
+	]
+
+}
